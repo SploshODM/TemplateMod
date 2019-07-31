@@ -1,0 +1,3 @@
+author = ODM_Splosh
+version = 0.1
+displayName = Template Mod
