@@ -1,3 +1,13 @@
 author = ODM_Splosh
 version = 0.1
 displayName = Template Mod
+
+author = ODM_Splosh
+version = 0.1
+displayName = Template Mod
+homepage = https://github.com/SploshODM/TemplateMod
+hideCode = false
+hideResources = false
+includeSource = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
+includePDB = true
