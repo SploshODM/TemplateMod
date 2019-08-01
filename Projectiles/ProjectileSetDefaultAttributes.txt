@@ -1,24 +1,30 @@
-            projectile.aiStyle = 0;                         //The behavior of this projectile while it exists in the world. (See: http://tconfig.wikia.com/wiki/List_of_Projectile_AI_Styles)
+			/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			//													PROJECTILE ATTRIBUTE LIBRARY
+			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+			aiType = ProjectileID.Bullet;           `		//Act exactly like default Bullet
+            projectile.aiStyle = 0;                         //The behavior of this projectile while it exists in the world. (Refer to aiStyle Library)
             projectile.alpha = 0;                           //The alpha blending applied to this projectile. 0 is fully opaque, while 255 is invisible.
             projectile.arrow = 0;                           //
             projectile.bobber = false;                      //
             projectile.coldDamage = false;                  //
-            projectile.counterWeight = false;               //
-            projectile.extraUpdates = 0;                    //
+            projectile.counterWeight = false;               //Is the projectile a yoyo counterweight
+            projectile.extraUpdates = 0;                    //Set to above 0 if you want the projectile to update multiple time in a frame
             projectile.friendly = false;                    //Whether this projectile is considered friendly, meaning it will not harm players and NPCs marked as friendly.
             projectile.glowMask = -1;                       //
             projectile.height = 0;                          //Height of projectile in pixels
             projectile.hide = false;                        //Whether to draw this projectile onscreen.
             projectile.hostile = false;                     //Whether this projectile is considered hostile, meaning it will harm players and NPCs marked as friendly.
             projectile.ignoreWater = false;                 //Whether passing through water impedes this projectile at all.
-            projectile.knockBack = 0;                       //
+            projectile.knockBack = 0;                       //knockback of the projectile. float?
             projectile.light = 0;                           //How much light this projectile emits while active.
             projectile.manualDirectionChange = false;       //
             projectile.maxPenetrate = 1;                    //How many enemies the projectile will penetrate before disappearing.
-            projectile.minionSlots = 0;                     //
+            projectile.minionSlots = 0;                     //How many minion slots the projectile consumes. 0 for non minion materials
             projectile.netImportant = false;                //
             projectile.noEnchantments = false;              //
             projectile.ownerHitCheck = false;               //Whether or not the projectile needs line-of-effect between the owner and a potential target to hit it.
+			projectile.penetrate = 0;						//How many enemies + bounces before projectile dies
             projectile.scale = 1;                           //A multiplier for how large to draw this projectile.
             projectile.tileCollide = true;                  //Whether this projectile ignores tile collisions, passing through them.
             projectile.timeLeft = 3600;                     //The time in frames before this projectile disappears. 
@@ -30,6 +36,40 @@
             projectile.melee = false;                       //This projectile does melee damage
             projectile.ranged = false;                      //This projectile does range damage
             projectile.minion = false;                      //This projectile does minion damage
-            projectile..thrown = false;                     //This projectile does summon damage
+            projectile.thrown = false;                      //This projectile does summon damage
 
             The name of the projectile expressed as a string.Note that the only time it is displayed ingame is when it kills a player, and written in the death message
+
+			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			//													PROJECTILE.AISTYLE LIBRARY
+			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			0 = Bullet Style. Projectile isnt affected by gravity
+			1 = Arrow Style. Projectile IS affected by gravity
+			2 = Thrown style. Used for Bones, knives and shuriken
+			3 = Boomerang. Projectile returns to the player
+			4 = Progressive Fading. used for Vilethorn
+			5 = Falling Star Effect. Projectile spins and is surrounded by sparkles
+			6 = Powder effect. Used for purification powder, vile powder
+			7 = Grapple. Projectile attaches to surfaces
+			8 = Magic Bounce Effect. Projectile bounces. bonucing is 'springier' than #14 and #16
+			9 = Controlled Bolt. Follows the cursor until released, then flies in direction last moved
+			10 = Falling block effect. Projectile acts like falling sand.
+			11 = Follow effect. Projectile follows player. Used for pets and minons
+			12 = Water stream effect. Used for aqua scepter
+			13 = Harpoon effect. Used by Harpoon
+			14 = Bounce effect. Projectile is thrown, and then falls and bounces. Used by Glowstick, spiky ball
+			15 = Flail effect. Used by Ball o' Hurt, Blue Moon
+			16 = Bounce/Explode effect. Projectile is thrown then falls and bounces. Used by Grenade, Dynamite
+			17 = Stationary. Used for Tombstone
+			18 = Exponential Acceleration. Projectile accelerates over time. Projectile also spins and has dark sparkles. Used by Demon Scythe, Death Sickle
+			19 = Polearm effect. Projectile extends a small distance from the player
+			20 = Motorized Tool Positioning. Used by Chainsaws and Drills, Hamdrax
+			21 = No gravity effect. Projectile bounces off of walls and emits purple particle effect. 
+			22 = Unknown. Used for ice block
+			23 = Similar to #12. Drops dust. Used by Eye Fire and Flames
+			24 = Shards. Projectile wiggles in a set direction. Used by Crystal Storm, Crystal Shards
+			25 = Unknown. Used by Boulders
+			26 = Bunny Effect. Used by Pet Bunny
+
+			All Info, reference and description copied from: https://tconfig.fandom.com/wiki/List_of_Projectile_AI_Styles
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
