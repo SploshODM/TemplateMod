@@ -1,0 +1,35 @@
+            projectile.aiStyle = 0;                         //The behavior of this projectile while it exists in the world. (See: http://tconfig.wikia.com/wiki/List_of_Projectile_AI_Styles)
+            projectile.alpha = 0;                           //The alpha blending applied to this projectile. 0 is fully opaque, while 255 is invisible.
+            projectile.arrow = 0;                           //
+            projectile.bobber = false;                      //
+            projectile.coldDamage = false;                  //
+            projectile.counterWeight = false;               //
+            projectile.extraUpdates = 0;                    //
+            projectile.friendly = false;                    //Whether this projectile is considered friendly, meaning it will not harm players and NPCs marked as friendly.
+            projectile.glowMask = -1;                       //
+            projectile.height = 0;                          //Height of projectile in pixels
+            projectile.hide = false;                        //Whether to draw this projectile onscreen.
+            projectile.hostile = false;                     //Whether this projectile is considered hostile, meaning it will harm players and NPCs marked as friendly.
+            projectile.ignoreWater = false;                 //Whether passing through water impedes this projectile at all.
+            projectile.knockBack = 0;                       //
+            projectile.light = 0;                           //How much light this projectile emits while active.
+            projectile.manualDirectionChange = false;       //
+            projectile.maxPenetrate = 1;                    //How many enemies the projectile will penetrate before disappearing.
+            projectile.minionSlots = 0;                     //
+            projectile.netImportant = false;                //
+            projectile.noEnchantments = false;              //
+            projectile.ownerHitCheck = false;               //Whether or not the projectile needs line-of-effect between the owner and a potential target to hit it.
+            projectile.scale = 1;                           //A multiplier for how large to draw this projectile.
+            projectile.tileCollide = true;                  //Whether this projectile ignores tile collisions, passing through them.
+            projectile.timeLeft = 3600;                     //The time in frames before this projectile disappears. 
+            projectile.trap = false;                        //
+            projectile.updatedNPCImmunity = false;          //
+            projectile.width = 0;                           //Width of projectile in pixels
+
+            projectile.magic = false;                       //This projectile does magic damage
+            projectile.melee = false;                       //This projectile does melee damage
+            projectile.ranged = false;                      //This projectile does range damage
+            projectile.minion = false;                      //This projectile does minion damage
+            projectile..thrown = false;                     //This projectile does summon damage
+
+            The name of the projectile expressed as a string.Note that the only time it is displayed ingame is when it kills a player, and written in the death message
