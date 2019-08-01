@@ -23,7 +23,8 @@ namespace TemplateMod.Items.Weapons
             //These settings make this item a gun
             item.noMelee = true;                    //sprite does no damage (summon weapons)
             item.shoot = 14;                        //This defines what type of projectile this weapon will shoot. Vanilla = [item.shoot = <ProjectileID>]. Modded = [item.shoot = mod.ProjectileType("<ProjectileName>")]
-            item.useAmmo = AmmoID.Bullet;           //The ID of the ammo this weapon uses
+            item.useAmmo = mod.ItemType("TemplateBulletItem"); 
+                //The ID of the ammo this weapon uses. Must match the item.ammo line of the mod ammo you want to use
             item.useStyle = 5;                      //Animation style: 1=overhead swing, 2=drinking, 3=stab, 4=hold up like life crystal, 5=staffs/guns
             item.ranged = true;                     //This item does Ranged Damage
 
