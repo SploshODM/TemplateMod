@@ -17,12 +17,13 @@ namespace TemplateMod.Items.Ammo
         public override void SetDefaults()
         {
             //These properties make the item classed as ammo
-            item.ammo = mod.ItemType(this);         //The ID of the ammo class this item is part of
+            item.ammo = mod.ItemType("TemplateBulletItem");         //The ID of the ammo class this item is part of
             item.consumable = true;                 //if the item is used on use like potions/foods/summoning items
             item.maxStack = 999;                    //How high the item stacks in the inventory
-            item.notAmmo = true;                    //Tooltip says 'ammo', can go into ammo slots
+            item.notAmmo = false;                   //Tooltip says 'ammo', can go into ammo slots
             item.ranged = true;                     //This item does Ranged Damage
             //item.shoot = mod.ProjectileType("ExampleBulletAProjectile");
+            item.shoot = 14;
             //item.ammo = mod.ItemType("ExampleBulletAItem"); //Tells game that the type of ammo is of ExampleBulletA
 
             //Thse allow the item to be loaded in game
@@ -40,7 +41,7 @@ namespace TemplateMod.Items.Ammo
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.SetResult(this, 111);
+            recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
     }
