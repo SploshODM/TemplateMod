@@ -22,8 +22,8 @@ namespace TemplateMod.Items.Ammo
             item.maxStack = 999;                    //How high the item stacks in the inventory
             item.notAmmo = false;                   //Tooltip says 'ammo', can go into ammo slots
             item.ranged = true;                     //This item does Ranged Damage
-            //item.shoot = mod.ProjectileType("ExampleBulletAProjectile");
-            item.shoot = 14;
+            item.shoot = mod.ProjectileType("TemplateBulletProjectile");
+            //item.shoot = 14;
             //item.ammo = mod.ItemType("ExampleBulletAItem"); //Tells game that the type of ammo is of ExampleBulletA
 
             //Thse allow the item to be loaded in game
