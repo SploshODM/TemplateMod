@@ -23,8 +23,7 @@ namespace TemplateMod.Items.Ammo
             item.notAmmo = false;                   //Tooltip says 'ammo', can go into ammo slots
             item.ranged = true;                     //This item does Ranged Damage
             item.shoot = mod.ProjectileType("TemplateBulletProjectile");
-            //item.shoot = 14;
-            //item.ammo = mod.ItemType("ExampleBulletAItem"); //Tells game that the type of ammo is of ExampleBulletA
+            item.shootSpeed = 10f;                   //Speed of the fired projectile, expressed as a float
 
             //Thse allow the item to be loaded in game
             item.height = 10;                       //The size of the height of the hitbox in pixels.
@@ -35,14 +34,17 @@ namespace TemplateMod.Items.Ammo
             item.crit = 6;                          //Crit strike chance. Player has base Crit Strike chance of 4%. Therefore item.crit = 0 means the item has 4% critical strike chance
             item.damage = 10;                       //The damage stat for the Weapon.
             item.value = 5;                         //Value of the item when bought, in PPGGSSCC. Sell price = 1/5th of buy price
-
         }
 
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.SetResult(this, 1);
-            recipe.AddRecipe();
+            ModRecipe recipe = new ModRecipe(mod);      //CRITICAL
+            recipe.AddIngredient(ItemID.DirtBlock, 1);
+            recipe.AddIngredient(ItemID.Wood, 1);
+            recipe.anyWood = true;
+            recipe.AddTile(TileID.WorkBenches);
+            recipe.SetResult(this);                     //CRITICAL
+            recipe.AddRecipe();                         //CRITICAL
         }
     }
 }
