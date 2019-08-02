@@ -3,7 +3,7 @@ version = 0.1
 displayName = Template Mod
 
 author = ODM_Splosh
-version = 0.1.03
+version = 0.1.04
 displayName = Template Mod
 homepage = https://github.com/SploshODM/TemplateMod
 hideCode = false
