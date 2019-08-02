@@ -1,0 +1,119 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                            THINGS TO ADD TO MOD
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    Items
+		Sword								//DONE
+		Gun									//DONE
+		Bullet								//DONE
+		Summon Weapon						
+		Minnion
+		Bow
+		Arrow
+		Staff
+		Magic Projectile
+		Magic Book
+		Sword Gun
+		Sword Bow
+		Gun Staff
+		Staff Sword
+		Gun Book
+		Javelin
+		Explosive/Bomb
+		Magic missile type weapon
+		Yoyo
+
+	Tools
+		Pickaxe
+		Hammer
+		Axe
+		Hamaxe
+		Pickhammer
+		Axe-Pick
+		Ham-Pick-Axe
+	
+	Armor
+		Helmet
+		Chestpiece
+		Leggings
+		
+	Vanity
+		Hat
+		Shirt
+		Pants
+
+	Accessories
+		Pet
+		Light Pet
+		Mount
+		Hook
+		Accessory
+		Soul
+		Wings
+
+	Consumables
+		Food
+		Potion
+		Heart Crystal
+		Mana Crystal
+		Summon Item
+		Boss Bag
+		Hair Dye
+		Magic Mirror/Teleport device
+		Clentaminator Solution
+	Blocks
+		Tile
+		Processed block (Stone -> brick)
+		Wall
+		Furniture
+		Bed
+		Door
+		Torch/lantern
+		Liquid
+		Chest
+		workbench
+		Banner
+		corrupted tile
+		trophy (wall mount)
+		Chair
+		Clock
+		Dresser
+		ore
+		ingot
+		Platform
+		Sapling
+		Tree Block
+	Creatures
+		Town NPC
+		Travelling NPC
+		Enemy
+		Critter
+		Boss
+		Gore for each
+		fish (fishing catch item)
+		Crate (Fishing catch loot box)
+
+	Others
+		Buff
+		Herb + seed
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                            VERSION NUMBER LIBRARY
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    v0.1.0
+        Created Mod
+    v0.1.03
+        TemplateSword already added
+        Added:
+			TemplateGun
+			TemplateBulletItem
+			TemplateBulletProjectile
+    v0.1.04
+        Added: 
+			TemplateSummonStaff
+			TemplateMinionNPC
+			TemplateMinionBuff
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
