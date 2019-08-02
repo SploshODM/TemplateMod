@@ -36,9 +36,9 @@
             item.rare = 0;                          //The color the title of your Weapon when hovering over it ingame. 0 & 1 will burn in lava (-1: Gray, 0: White, 1: Blue, 2: Green, 3: Orange, 4: Light Red, 5: Pink, 6: Light Purple, 7: Lime, 8: Yellow, 9: Cyan, 10: Red, 11: Purple, 12: Rainbow)                   
             item.reuseDelay = 0;                    //Delay added after useAnimation timer, the player cannot use the item until after this cooldown
             item.scale = 1f;                        //Size multiplier of items sprite
-            item.shoot = 0;                         //This defines what type of projectile this weapon will shoot. Vanilla = [item.shoot = <ProjectileID>]. Modded = [item.shoot = mod.ProjectileType("<ProjectileName>")]
+            item.shoot = 0;                         //This is what the projectile will look like. Vanilla = [item.shoot = <ProjectileID>]. Modded = [item.shoot = mod.ProjectileType("<ProjectileName>")]
             item.shootSpeed = 0f;                   //Speed (float) of the fired projectile
-            item.useAmmo = AmmoID.None;             //The ID of the ammo this weapon uses
+            item.useAmmo = AmmoID.None;             //The ID of the ammo this weapon uses, the behaviour of the projectile
             item.useAnimation = 100;                //How long the Weapon is used for.
             item.useStyle = 0;                      //Animation style: 1=overhead swing, 2=drinking, 3=stab, 4=hold up like life crystal, 5=staffs/guns
             item.UseSound = null;                   //What sounds plays when item is used. Use this property as:[item.UseSound = SoundID.Item1;]. See 'Sound Library below'

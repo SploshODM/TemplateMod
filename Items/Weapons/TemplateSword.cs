@@ -24,8 +24,25 @@ namespace TemplateMod.Items.Weapons
         public override void SetDefaults()
             // * This is where you set the properties of the sword/item
         {
-            item.CloneDefaults(ItemID.WoodenSword);
-            // * This item is the most basic of weapons, a clone of a Vanilla Terraria Item. For a custom weapon, look at ItemSetDefaultsAttributes.txt for all available attributes
+            //These settings make this item a sword
+            item.melee = true;                      //This item does Melee Damage
+            item.useStyle = 1;                      //Animation style: 1=overhead swing, 2=drinking, 3=stab, 4=hold up like life crystal, 5=staffs/guns
+
+            //These attributes set the technical aspects of the sword
+            item.height = 40;                       //The size of the height of the hitbox in pixels.
+            item.scale = 1f;                        //Size multiplier of items sprite
+            item.useAnimation = 50;                 //How long the Weapon is used for.
+            item.useTime = 50;                      //How fast the Weapon is used.
+            item.useTurn = false;                   //Can the player turn during items' animation
+            item.width = 40;                        //The size of the width of the hitbox in pixels.
+
+            //These attributes give the item style and originality
+            item.autoReuse = false;                 //true = autoswing
+            item.crit = 2;                          //Crit strike chance. Player has base Crit Strike chance of 4%. Therefore item.crit = 0 means the item has 4% critical strike chance
+            item.damage = 7;                        //The damage stat for the Weapon.
+            item.knockBack = 0.5f;                  //The knockback (float) stat of your Weapon.
+            item.UseSound = null;                   //What sounds plays when item is used. Use this property as:[item.UseSound = SoundID.Item1;]. See 'Sound Library below'
+            item.value = 20;                         //Value of the item when bought, in PPGGSSCC. Sell price = 1/5th of buy price
         }
 
         public override void AddRecipes()
